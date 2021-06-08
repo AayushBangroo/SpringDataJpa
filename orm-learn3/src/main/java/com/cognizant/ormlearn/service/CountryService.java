@@ -29,7 +29,6 @@ public class CountryService {
 		if (!result.isPresent()) throw new CountryNotFoundException("Country with country code: " + countryCode + " not found.");
 		
 		Country country = result.get();
-		
 		return country;
 	}
 	
